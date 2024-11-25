@@ -1,0 +1,59 @@
+h1, h2, h3, .content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+	text-align: center;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+table, th, td {
+    border:1px solid;
+}
+
+blockquote {
+	background-color: rgba(180, 180, 180, 0.815);
+	font-weight: lighter;
+	font-style: italic;
+	border-left: 3px solid rgb(43, 42, 42);
+	padding: 1px 5px;
+}
+
+pre {
+    white-space: pre-wrap;
+	font-size: 12px;
+}
+
+.page-break {
+    page-break-after: always;
+}
+
+.sub-page-break {
+    page-break-after: always;
+}
+
+.content {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.subtitle {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.index table, .index td, .index th {
+	border: none;
+}
+
+.index table {
+	width: 100%;
+}

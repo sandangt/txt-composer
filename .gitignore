@@ -1,0 +1,12 @@
+.vscode/
+node_modules/
+.ipynb_checkpoints/
+dist/
+*.pdf
+*.docx
+*.doc
+*.xlsx
+.python-version
+draft/target.md
+draft/img/
+pnpm-lock.yaml
