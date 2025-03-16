@@ -1,16 +1,18 @@
 {
-  "name": "bachelor-thesis",
+  "name": "txt-composer",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@slidev/cli": "0.50.0-beta.7",
+    "@slidev/cli": "51.4.0",
     "@slidev/theme-default": "0.25.0",
     "easy-pdf-merge": "0.2.6",
     "md-to-pdf": "5.2.4"
   },
   "scripts": {
-    "build": "md-to-pdf --stylesheet src/main.css --config-file src/config.js draft/target.md"
+    "build-pdf": "md-to-pdf --stylesheet src/main.css --config-file src/config.js draft/target.md",
+		"build-slide-pdf": "pnpm exec slidev export ./draft/target.md --output ./dist/export.pdf",
+		"build-slide": "pnpm exec slidev build ./draft/target.md -o ../dist",
+		"play-slide": "pnpm exec slidev ./draft/target.md"
   },
   "devDependencies": {
     "playwright-chromium": "^1.49.0"

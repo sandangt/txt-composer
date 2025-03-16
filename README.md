@@ -1,22 +1,35 @@
-# Bachelor thesis
+# Turn markdown into something
 
-- Export thesis report:
+## Export to pdf
+
+- Create `./draft/target.md`
+- Run to export
 	```bash
-	pnpm run thesis-build
+	pnpm run build-pdf
 	```
-- Show thesis slide:
+
+## Presentation slide
+
+- Play the slide:
 	```bash
-	pnpm run slide-run
+	pnpm play-slide
 	```
-- export thesis slide:
+- Build the slide:
 	```bash
-	pnpm run slide-export
+	pnpm build-slide
 	```
-	- With animation:
-		```bash
-		pnpm run slide-export --with-clicks
-		```
-	- Dark theme:
-		```bash
-		pnpm run slide-export --dark
-		```
+- Export slide to pdf:
+	```bash
+	pnpm build-slide-pdf
+	```
+
+### Special effects
+
+- With animation:
+	```bash
+	pnpm run slide-export --with-clicks
+	```
+- Dark theme:
+	```bash
+	pnpm run slide-export --dark
+	```
